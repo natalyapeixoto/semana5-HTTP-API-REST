@@ -35,6 +35,9 @@ Status Code | Significado
 
 lista de status code: https://pt.wikipedia.org/wiki/Lista_de_c%C3%B3digos_de_estado_HTTP 
 
+__Headers__: Cabeçalho da requisição/resposta
+ 
+__body__: corpo da requisição/resposta 
 
 ### Criando um servidor com Node.js
 
@@ -75,8 +78,6 @@ __queryString__:http://example.com/over/there?name=ferret  'name=ferret'
 __endpoint__ : Um endpoint de um web service é a URL(o final dela) onde seu serviço pode ser acessado por uma aplicação cliente.   
 
 
-__Headers__: Cabeçalho da requisição/resposta 
-__body__: corpo da requisição/resposta 
 
 #### API REST (https://blog.caelum.com.br/rest-principios-e-boas-praticas/)
 
