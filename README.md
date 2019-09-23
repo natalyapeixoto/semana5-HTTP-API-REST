@@ -36,7 +36,13 @@ Status Code | Significado
 lista de status code: https://pt.wikipedia.org/wiki/Lista_de_c%C3%B3digos_de_estado_HTTP 
 
 __Headers__: Cabeçalho da requisição/resposta
- 
+
+Não usa-se, normalmente, body nas requisições GET. Ele é mais útil em POSTs e PUTs.
+Quando você envia os dados de um formulário de uma página HTML, o body da requisição é “encodado” em formato “form-urlencoded”, geralmente. Exemplo:
+
+__CORS__: Cross-Origin Resource Sharing. Por default uma aplicação JavaScript rodando no browser pode apenas acessar recursos HTTP do mesmo domínio (origin). 
+Então se no backend não setarmos regras que permitam requests de outros domínios, a requisição vai falhar. 
+
 __body__: corpo da requisição/resposta 
 
 ### Criando um servidor com Node.js
@@ -74,18 +80,13 @@ __queryString__:http://example.com/over/there?name=ferret  'name=ferret'
 
 É um conjunto de instruções e padrões de programação para acesso a um aplicativo de software. Uma empresa de software lança sua API para o público de modo que outros criadores de software possam desenvolver produtos acionados por esse serviço.
 
+#### API REST (https://blog.caelum.com.br/rest-principios-e-boas-praticas/)
+REST (Respresentational State Transfer)
+
+REST é um dos modelos de arquitetura que foi descrito por Roy Fielding, um dos principais criadores do protocolo HTTP, em sua tese de doutorado e que foi adotado como o modelo a ser utilizado na evolução da arquitetura do protocolo HTTP.
+
 
 __endpoint__ : Um endpoint de um web service é a URL(o final dela) onde seu serviço pode ser acessado por uma aplicação cliente.   
-
-
-
-#### API REST (https://blog.caelum.com.br/rest-principios-e-boas-praticas/)
-
-    * Pricípios 
-
-    * Boas práticas 
-
-__CORS__ https://github.com/expressjs/cors
 
 ### Rotas
 
@@ -110,3 +111,4 @@ https://otaviopace.github.io/livro-desenvolvimento-web-basico/book/qual_a_ideia_
 https://expressjs.com
 https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/routes
 https://nodemon.io/
+https://github.com/expressjs/cors
