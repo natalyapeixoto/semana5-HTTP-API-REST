@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reprograma - administrator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Gerenciador de Alunas</h1>
+
+    <div class='page'>
+        
+        <div class="input-field">
+            <label for="name">Nome da aluna</label>
+            <input type="text" id="name">
+        </div>
+        <div class="input-field">
+            <label for="dataDeNascimento">Data de nascimento</label>
+            <input type="data" id="dataDeNascimento" placeholder="dd/mm/aaaa">
+        </div>
+        <fieldset >
+            <legend tabIndex="0">Nasceu em SP?</legend>
+            <input
+                type="radio"
+                name="nasceuEmSp"
+                id="sim"
+                value="sim"
+            />
+            <label for="sim">Sim</label>
+            <input
+                type="radio"
+                name="nasceuEmSp"
+                id="nao"
+                value="nao"
+            />
+            <label for="nao">Não</label>
+        </fieldset>
+        <button id="inputAluna">Enviar</button>
+        <button id="listarAlunas">Listar Alunas</button>
+    </div>
+</body>
+<script src="ex-day5.js"></script>
+</html>

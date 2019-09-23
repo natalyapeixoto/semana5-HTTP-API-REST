@@ -35,31 +35,10 @@ Status Code | Significado
 lista de status code: https://pt.wikipedia.org/wiki/Lista_de_c%C3%B3digos_de_estado_HTTP 
 ex: /produtos
 
-### URL
-Exemplo: www.google.com/images?size=500&free_use=false.
-
-Nessa URL temos o domínio: www.google.com.
-A rota: /images.
-Dados query string (depois da interrogação): size valendo 500 e free_use valendo false.
-
-__queryParams__:http://example.com/over/__there?name=ferret__
-
-__body__: corpo da requisição/resposta 
-
 
 ### Criando um servidor com Node.js
-```
-const http = require('http');
-const port = 8080
 
-http.createServer(function (req, res) {
-  res.writeHead(200, {'Content-Type': 'text/html'});
-  res.end('Hello World!');
-}).listen(port);
-
-```
-
-### Usando Express
+#### Usando Express
 Express é uma lib que facilita a criação de servidores HTTP
 `npm install --save express`
 
@@ -73,10 +52,20 @@ application.get('/', function (request, response) {
   console.log('URL:', request.url)
   console.log('Método:', request.method)
   response.status(200).send('Olá!')
-})
-
-application.listen(PORT)
+}).listen(PORT)
 ```
+
+### URL
+Exemplo: www.google.com/images?size=500&free_use=false.
+
+Nessa URL temos o domínio: www.google.com.
+o path: /images.
+Dados query string (depois da interrogação): size = 500 e free_use = false.
+
+__queryString__:http://example.com/over/there?name=ferret  'name=ferret' 
+
+
+
 
 ### API (Application Programming Interface)
 
@@ -84,6 +73,10 @@ application.listen(PORT)
 
 
 __endpoint__ : Um endpoint de um web service é a URL(o final dela) onde seu serviço pode ser acessado por uma aplicação cliente.   
+
+
+__Headers__: Cabeçalho da requisição/resposta 
+__body__: corpo da requisição/resposta 
 
 #### API REST (https://blog.caelum.com.br/rest-principios-e-boas-praticas/)
 
@@ -95,21 +88,24 @@ __CORS__ https://github.com/expressjs/cors
 
 ### Rotas
 
+Rotas são usadas para determinar como uma aplicação responde a um request de um cliente em um determinado endpoint, que é uma URI e método HTTP específico (ex: GET).
+
+```
+app.METHOD(PATH, HANDLER)
+```
+
+Cada Rota pode ter uma ou mais funções, que são executadas quando a rota é 'matched'
+
 
 ### Controller 
+Callback functions que lidam com o router. 
 
-
-EXTRA 
-Projeto com front 
-Conteuda Extra
-queryParams  
-get buscando registro 
-conteudo extra post FILTER 
-
-passa por uma estrada(regras) para chegar na cidade para depositar seu dinheirinho no banco. 
 
 
 #### Links:
 https://medium.com/clebertech/o-que-%C3%A9-json-daaa9311e929
 https://www.w3schools.com/nodejs/
 https://otaviopace.github.io/livro-desenvolvimento-web-basico/book/qual_a_ideia_do_livro.html 
+https://expressjs.com
+https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/routes
+https://nodemon.io/

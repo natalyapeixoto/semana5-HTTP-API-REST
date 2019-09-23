@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+h1 {
+    color: rgb(88, 15, 88);
+    text-align: center;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-field label {
+   display: block;
+}
+.input-field {
+    margin-top: 20px;
+}
+
+fieldset {
+    border: none;
+    padding:0;
+    margin-top: 20px;
+}
+
+button {
+    border: 1px solid purple;
+    background-color: transparent;
+    cursor: pointer;
+    width: 170px;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 10px 15px;
+    color: purple;
+}
+
+button:hover {
+    background-color: purple;
+    color:white;
+}
