@@ -19,6 +19,7 @@ HEAD | Similar ao GET, mas utilizado apenas para se obter os cabeçalhos de resp
 OPTIONS	| Obter quais manipulações podem ser realizadas em um determinado recurso.
 
 **Response**
+
 Depois que o servidor processa uma requisição, ele precisa devolver uma resposta que geralmente vai estar em um formato que seu navegador consiga entender: HTML, XML ou JSON.
 
 A Response também vem com o __Status Code__ que informa o que aconteceu com a requisição que você mandou.
@@ -33,7 +34,6 @@ Status Code | Significado
 500 | aparentemente o servidor não conseguiu responder um request válido.  
 
 lista de status code: https://pt.wikipedia.org/wiki/Lista_de_c%C3%B3digos_de_estado_HTTP 
-ex: /produtos
 
 
 ### Criando um servidor com Node.js
