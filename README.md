@@ -106,6 +106,14 @@ Cada Rota pode ter uma ou mais funções, que são executadas quando a rota é '
 Callback functions que lidam com o router. 
 
 
+### cURL (client for URL)
+é uma ferramenta da linha de comando para transferir dados usando vários protocolos, entre eles o HTTP. 
+
+#### HTTP GET 
+``` curl https://www.google.com ``` 
+
+#### Retornando somente os headers de uma URL 
+```curl -I https://www.google.com ```
 
 #### Links:
 https://medium.com/clebertech/o-que-%C3%A9-json-daaa9311e929
