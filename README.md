@@ -37,13 +37,16 @@ lista de status code: https://pt.wikipedia.org/wiki/Lista_de_c%C3%B3digos_de_est
 
 __Headers__: Cabeçalho da requisição/resposta
 
-Não usa-se, normalmente, body nas requisições GET. Ele é mais útil em POSTs e PUTs.
-Quando você envia os dados de um formulário de uma página HTML, o body da requisição é “encodado” em formato “form-urlencoded”, geralmente. Exemplo:
+Um cabeçalho de requisição é um cabeçalho HTTP que pode ser utilizado em uma requisição HTTP, e não é relacionado ao conteúdo da mensagem.
+
 
 __CORS__: Cross-Origin Resource Sharing. Por default uma aplicação JavaScript rodando no browser pode apenas acessar recursos HTTP do mesmo domínio (origin). 
 Então se no backend não setarmos regras que permitam requests de outros domínios, a requisição vai falhar. 
 
 __body__: corpo da requisição/resposta 
+
+Não usa-se, normalmente, body nas requisições GET. Ele é mais útil em POSTs e PUTs,
+Quando você envia os dados de um formulário de uma página HTML, por exemplo. 
 
 ### Criando um servidor com Node.js
 
