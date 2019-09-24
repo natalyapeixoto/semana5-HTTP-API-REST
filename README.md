@@ -123,3 +123,4 @@ https://expressjs.com
 https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/routes
 https://nodemon.io/
 https://github.com/expressjs/cors
+https://www.keycdn.com/support/popular-curl-examples
