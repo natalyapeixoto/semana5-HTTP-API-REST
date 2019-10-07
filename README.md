@@ -27,11 +27,11 @@ Os status code são dividos em 5 classes (categorias ou famílias). O Primeiro d
 
 Status Code | Significado
 ------------ | -------------
-__100__ | são apenas informativas.
-__200__ | significa que a requisição foi bem sucedida
-__300__ | querem te falar pra você fazer um redirecionamento, ou seja, uma segunda requisição
-__400__ | significa que tem algum erro de sintaxe na requisição ou a requisção não pode ser completada. 
-__500__ | aparentemente o servidor não conseguiu responder um request válido.  
+__100__ | São apenas informativas.
+__200__ | Significa que a requisição foi bem sucedida
+__300__ | Querem te falar pra você fazer um redirecionamento, ou seja, uma segunda requisição
+__400__ | Significa que tem algum erro de sintaxe na requisição ou a requisção não pode ser completada. 
+__500__ | Aparentemente o servidor não conseguiu responder um request válido.  
 
 Lista de status code: https://pt.wikipedia.org/wiki/Lista_de_c%C3%B3digos_de_estado_HTTP 
 
