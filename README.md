@@ -11,12 +11,12 @@ O HTTP funciona como um protocolo de requisição-resposta entre cliente e servi
 VERBOS | significado
 ------------ | -------------
 __GET__| Obter os dados de um recurso.
-POST |	Criar um novo recurso.
-PUT	| Substituir os dados de um determinado recurso.
-PATCH |	Atualizar parcialmente um determinado recurso.
-DELETE | Excluir um determinado recurso.
-HEAD | Similar ao GET, mas utilizado apenas para se obter os cabeçalhos de resposta, sem os dados em si.
-OPTIONS	| Obter quais manipulações podem ser realizadas em um determinado recurso.
+__POST__ |	Criar um novo recurso.
+__PUT__	| Substituir os dados de um determinado recurso.
+__PATCH__ |	Atualizar parcialmente um determinado recurso.
+__DELETE__ | Excluir um determinado recurso.
+__HEAD__ | Similar ao GET, mas utilizado apenas para se obter os cabeçalhos de resposta, sem os dados em si.
+__OPTIONS__	| Obter quais manipulações podem ser realizadas em um determinado recurso.
 
 **Response**
 
@@ -27,13 +27,13 @@ Os status code são dividos em 5 classes (categorias ou famílias). O Primeiro d
 
 Status Code | Significado
 ------------ | -------------
-100 | são apenas informativas.
-200 | significa que a requisição foi bem sucedida
-300 | querem te falar pra você fazer um redirecionamento, ou seja, uma segunda requisição
-400 | significa que tem algum erro de sintaxe na requisição ou a requisção não pode ser completada. 
-500 | aparentemente o servidor não conseguiu responder um request válido.  
+__100__ | são apenas informativas.
+__200__ | significa que a requisição foi bem sucedida
+__300__ | querem te falar pra você fazer um redirecionamento, ou seja, uma segunda requisição
+__400__ | significa que tem algum erro de sintaxe na requisição ou a requisção não pode ser completada. 
+__500__ | aparentemente o servidor não conseguiu responder um request válido.  
 
-lista de status code: https://pt.wikipedia.org/wiki/Lista_de_c%C3%B3digos_de_estado_HTTP 
+Lista de status code: https://pt.wikipedia.org/wiki/Lista_de_c%C3%B3digos_de_estado_HTTP 
 
 __Headers__: Cabeçalho da requisição/resposta
 
@@ -43,7 +43,7 @@ Um cabeçalho de requisição é um cabeçalho HTTP que pode ser utilizado em um
 __CORS__: Cross-Origin Resource Sharing. Por default uma aplicação JavaScript rodando no browser pode apenas acessar recursos HTTP do mesmo domínio (origin). 
 Então se no backend não setarmos regras que permitam requests de outros domínios, a requisição vai falhar. 
 
-__body__: corpo da requisição/resposta 
+__Body__: Corpo da requisição/resposta 
 
 Não usa-se, normalmente, body nas requisições GET. Ele é mais útil em POSTs e PUTs,
 Quando você envia os dados de um formulário de uma página HTML, por exemplo. 
@@ -89,7 +89,7 @@ REST (Respresentational State Transfer)
 REST é um dos modelos de arquitetura que foi descrito por Roy Fielding, um dos principais criadores do protocolo HTTP, em sua tese de doutorado e que foi adotado como o modelo a ser utilizado na evolução da arquitetura do protocolo HTTP.
 
 
-__endpoint__ : Um endpoint de um web service é a URL(o final dela) onde seu serviço pode ser acessado por uma aplicação cliente.   
+__Endpoint__ : Um endpoint de um web service é a URL(o final dela) onde seu serviço pode ser acessado por uma aplicação cliente.   
 
 ### Rotas
 
@@ -107,7 +107,7 @@ Callback functions que lidam com o router.
 
 
 ### cURL (client for URL)
-é uma ferramenta da linha de comando para transferir dados usando vários protocolos, entre eles o HTTP. 
+É uma ferramenta da linha de comando para transferir dados usando vários protocolos, entre eles o HTTP. 
 
 #### HTTP GET 
 ``` curl https://www.google.com ``` 
