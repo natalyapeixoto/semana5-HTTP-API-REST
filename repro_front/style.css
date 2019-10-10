@@ -19,8 +19,8 @@ h1 {
     background-color: #7E459B;
     width: 600px;
     padding: 16px 26px;
-    margin: 30px auto;
     border-radius: 5px;
+    margin: 0 auto !important;
 }
 
 .page {
@@ -67,4 +67,43 @@ button:hover {
     background-color: purple;
     color:white;
     transition: all 1s;
+}
+
+.alunas-container {
+    width: 900px;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+.aluninhas {
+    border-top: 1px solid rgba(128, 128, 128, 0.644);
+    list-style: none;
+    border-left:1px solid rgba(128, 128, 128, 0.644);
+    border-right:1px solid rgba(128, 128, 128, 0.644);
+    border-bottom:1px solid rgba(128, 128, 128, 0.644);
+    margin-bottom: 50px;
+    
+}
+
+.aluninha {
+    padding: 40px 30px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.582);
+    transition: all 1s;
+}
+.aluninha:hover {
+    font-size: 23px;
+    opacity: .8;
+    background-color: rgba(237, 212, 240, 0.897);
+    cursor: pointer;
+}
+
+.alunaView {
+    padding: 10px 15px;
+    
+}
+
+footer {
+    background-color:  #7E459B;
+    padding: 80px 20px;
+    text-align: center;
 }
